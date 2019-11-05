@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% set active_page = 'resume' %}
+
+{% block body %}
+
+<div class="wrapper">
+  <div class="resume-container">
+    <a href="../static/files/resume-4.pdf" download>
+      <div class="resume-button">
+          <i class="fas fa-file-pdf fa-3x"></i>
+          <div class="button-text">PDF Resume</div>
+      </div>
+    </a>
+    <a href="../static/files/resume-simple.docx" download>
+      <div class="resume-button">
+        <i class="fas fa-file-word fa-3x"></i>
+        <div class="button-text">Simple Resume</div>
+      </div>
+    </a>
+  </div>
+  <div class="resume-viewer">
+    <iframe src="../static/files/resume-4.pdf#toolbar=0" frameborder="0"></iframe>
+  </div>
+</div>
+
+{% endblock %}

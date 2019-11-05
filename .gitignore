@@ -1,0 +1,8 @@
+# ignore my internal dependency list
+dependencies.txt
+
+# ignore webassets generated folder
+/static/.webassets-cache/
+
+# ignore vscode internal settings
+/.vscode

@@ -1,0 +1,102 @@
+.skills-container {
+  background-color: rgba(78, 78, 94, 0.91);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  margin: 2px auto;
+  color: aliceblue;
+  padding-top: 3px;
+  border-radius: 3px;
+}
+
+.professional-title, .personal-title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.personal-title {
+  margin-top: 40px;
+}
+
+.professional-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.personal-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 140px;
+  height: 140px;
+  background-color: #46a080;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-top: 6px;
+}
+
+.skill .skill-title {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 930px) {
+  .skills-container {
+    width: 1095px;
+    height: 650px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .professional-title {
+    margin-top: 30px;
+  }
+
+  .professional-title, .personal-title {
+    font-size: 40px;
+  }
+
+  .professional-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .personal-skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    width: 175px;
+    height: 175px;
+  }
+
+  .skill img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .skill .skill-title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}

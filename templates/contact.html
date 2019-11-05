@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% set active_page = 'contact' %}
+
+{% block body %}
+
+
+<div class="contact-container">
+  <form>
+    <div class="row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe">
+    </div>
+    <div class="row">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="johndoe@mail.com">
+    </div>
+    <div class="row">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Write your question / message..."></textarea>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+{% endblock %}

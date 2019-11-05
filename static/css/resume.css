@@ -1,0 +1,101 @@
+iframe {
+  display: none;
+}
+
+.resume-container {
+  background-color: rgba(78, 78, 94, 0.91);
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 300px;
+  margin: auto;
+  border-radius: 3px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  justify-content: center;
+}
+
+.resume-container a {
+  background-color: #60B99A;
+  width: 270px;
+  color: aliceblue;
+  padding: 12px 20px;
+  margin: 12px auto;
+  border-radius: 3px;
+  border: none;
+  font-size: 24px;
+}
+
+.resume-container a i {
+  color: #494d49;
+}
+
+.resume-container a span {
+  display: inline-block;
+}
+
+.resume-container a:hover {
+  background-color: #83c9b1;
+}
+
+.resume-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-button .button-text {
+  margin-left: 10px;
+  margin-top: 27px
+}
+
+@media screen and (min-width: 900px) {
+  iframe {
+    display: block;
+    width: 900px;
+    height: 720px;
+    border-radius: 3px;
+  }
+
+  .resume-container {
+    margin: 10px auto;
+    width: 900px;
+    height: 75px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .resume-container a {
+    width: 215px;
+  }
+
+  .resume-container .resume-button i {
+    font-size: 30px;
+  }
+
+  .button-text {
+    font-size: 20px;
+  }
+
+  .resume-button .button-text {
+    margin-top: 3px;
+  }
+
+  .resume-viewer {
+    margin: auto;
+  }
+
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

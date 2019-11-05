@@ -1,0 +1,10 @@
+<nav>
+  <ul class="menu">
+    <li class="logo"><a href="/">Evan Zimmerman</a></li>
+    <li class="item"><a class="{{ 'active' if active_page == 'home' else '' }}" href="/">Home</a></li>
+    <li class="item"><a class="{{ 'active' if active_page == 'skills' else '' }}" href="/skills">Skills</a></li>
+    <li class="item"><a class="{{ 'active' if active_page == 'resume' else '' }}" href="/resume">Resume</a></li>
+    <li class="item"><a class="{{ 'active' if active_page == 'contact' else '' }}" href="/contact">Contact</a></li>
+    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+  </ul>
+</nav>
