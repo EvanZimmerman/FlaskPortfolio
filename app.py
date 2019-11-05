@@ -19,21 +19,6 @@ bundles = {
     output = 'gen/site.css',
     filters = 'cssmin'
   )
-  # 'layout_css': Bundle(
-  #   'css/layout.css',
-  #   output = 'gen/layout.css',
-  #   filters = 'cssmin'
-  # ),
-  # 'home_css': Bundle(
-  #   'css/home.css',
-  #   output = 'gen/home.css',
-  #   filters = 'cssmin'
-  # ),
-  # 'contact_css': Bundle(
-  #   'css/contact.css',
-  #   output = 'gen/contact.css',
-  #   filters = 'cssmin'
-  # )
 }
 
 assets = Environment(app)
