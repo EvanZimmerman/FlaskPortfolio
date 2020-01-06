@@ -6,5 +6,5 @@ class ContactForm(FlaskForm):
   name = StringField('Name', validators=[DataRequired()], render_kw={ "placeholder": "John Doe" })
   email = StringField('Email', validators=[DataRequired(), Email(message=('Not a valid email address'))], render_kw={ "placeholder": "johndoe@gmail.com" })
   message = TextAreaField('Message', validators=[DataRequired()], render_kw={ "placeholder": "Write your question / message..." })
-  # recaptcha = RecaptchaField()
+  recaptcha = RecaptchaField()
   submit = SubmitField('Submit')

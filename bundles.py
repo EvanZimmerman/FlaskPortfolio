@@ -2,7 +2,7 @@ from flask_assets import Environment, Bundle
 
 class Bundles:
   def __init__(self, app):
-    self.assets = Environment(app).register({
+    Environment(app).register({
       'layout_js': Bundle (
         'js/lib/jquery-3.4.1.min.js',
         'js/layout.js',
