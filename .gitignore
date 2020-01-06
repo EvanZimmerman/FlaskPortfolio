@@ -1,3 +1,9 @@
+# ignore cached py data
+__pycache__
+
+# ignore bundles gen folder
+/static/gen/
+
 # ignore my internal dependency list
 dependencies.txt
 
@@ -6,3 +12,9 @@ dependencies.txt
 
 # ignore vscode internal settings
 /.vscode
+
+# ignore config file
+config.py
+
+# ignore resume files
+/static/files

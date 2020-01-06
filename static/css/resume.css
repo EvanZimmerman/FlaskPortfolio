@@ -1,4 +1,4 @@
-iframe {
+.resume-frame {
   display: none;
 }
 
@@ -54,7 +54,7 @@ iframe {
 }
 
 @media screen and (min-width: 900px) {
-  iframe {
+  .resume-frame {
     display: block;
     width: 900px;
     height: 720px;
