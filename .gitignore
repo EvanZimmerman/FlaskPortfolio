@@ -16,5 +16,5 @@ dependencies.txt
 # ignore config file
 config.py
 
-# ignore resume files
-/static/files
+# ignore env folder
+env

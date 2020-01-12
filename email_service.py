@@ -1,19 +1,15 @@
-import smtplib
-from email.message import EmailMessage
+from flask_sendgrid import SendGrid
 
 class EmailService:
   def __init__(self, app):
     self.app = app
 
   def send_message(self, name, email, message):
-    subject = f'Porfolio Website - New Message from {name}'
-    msg = f'Subject: {subject}\n\nName: {name}\nEmail: {email}\n\n{message}'
-    to = [self.app.config['EMAIL_TO_ADDR']]
+    subject = f'New Message from {name} - Porfolio Website'
+    msg = f'Name: {name}\n\nEmail: {email}\n\n{message}'
 
-    # create server and send contents
-    server = smtplib.SMTP(self.app.config['SMTP_ADDR'])
-    server.ehlo()
-    server.starttls()
-    server.login(self.app.config['GMAIL_FROM_USER'], self.app.config['GMAIL_FROM_PASS'])
-    server.sendmail(self.app.config['GMAIL_FROM_USER'], to, msg)
-    server.quit()
+    # send email via sendgrid
+    mail = SendGrid(self.app)
+    mail.send_email(to_email=self.app.config['EMAIL_TO_ADDR'],
+                         subject=subject,
+                         from_email='evanzimm.portfolio@gmail.com', text=msg) 

@@ -1,6 +1,5 @@
 # flask imports
 from flask import Flask, render_template, url_for, redirect, flash
-from flask_assets import Bundle, Environment
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_toastr import Toastr
