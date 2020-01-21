@@ -2,7 +2,7 @@
 
 I wanted to create a portfolio website to outline the skills that I have obtained from both my professional and personal (self-taught) career.  After finishing a Python Flask tutorial on Udemy, I wanted to practice my new skillset by developing a simple, static portfolio website.  I was yearning to create this site for quite a long time, but wanted to find a very simple framework to have minimal backend development and found Flask to fit my use case perfectly!
 
-Another important note would be I wanted to create a very simple website design from scratch.  I did not want to copy the bootstrap HTML boilerplate template and modify the values.  I wanted to create the CSS styling and HTML from scratch and attempt to customly create a responsive website. I learned many new concepts by doing this and my implementation is not perfect, but I believe it was very insightful to take this approach instead of simply downloading an auto generated template!
+Another important note would be I wanted to create a very simple website design from scratch.  I did not want to copy the bootstrap HTML template and only modify the values to fit my skillset.  I wanted to create the CSS styling and HTML from scratch and attempt to customly create a responsive website. I learned many new concepts by doing this and my implementation is not perfect, but I believe it was very insightful to take this approach instead of simply downloading an auto generated template!
 
 Live website: https://evanzimm.com/
 
