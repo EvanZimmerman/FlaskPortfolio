@@ -135,5 +135,11 @@ main {
   .recaptcha {
     margin-top: 5px;
   }
+}
 
+@media screen and (max-height: 775px) {
+  .contact-container {
+    position: static;
+    margin: 5px auto;
+  }
 }
