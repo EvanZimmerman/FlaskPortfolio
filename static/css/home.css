@@ -99,3 +99,10 @@ img {
   }
 }
 
+@media screen and (max-height: 625px) {
+  .home-container {
+    margin: 5px auto;
+    position: static;
+  }
+}
+
